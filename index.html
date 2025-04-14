@@ -6,6 +6,7 @@
     <title>Fingerprint Scanner</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -21,6 +22,11 @@
         }
         #fingerprint-icon.scanning {
             transform: scale(1.2);
+        }
+        .arabic {
+            font-family: 'Amiri', serif;
+            direction: rtl;
+            text-align: center;
         }
     </style>
 </head>
@@ -53,31 +59,47 @@
 
         <div id="results-container" class="mt-8 space-y-4 hidden">
             <div id="arches-result" class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded-md">
-                <h2 class="text-xl font-semibold mb-2">Arches (Blue LED Light)</h2>
+                <h2 class="text-xl font-semibold mb-2">Arches</h2>
+                <h2 class="text-xl font-semibold mb-2 arabic">الأقواس</h2>
                 <p class="mb-2"><span class="font-semibold">Science Fact:</span> Arches are the most common fingerprint pattern, forming smooth, curved ridges. They represent simplicity and unity.</p>
+                <p class="mb-2 arabic"><span class="font-semibold">الحقيقة العلمية:</span> الأقواس هي أكثر أنماط بصمات الأصابع شيوعًا، وتشكل حوافًا ناعمة ومنحنية. إنها تمثل البساطة والوحدة.</p>
                 <p class="mb-2"><span class="font-semibold">Quran Verse:</span> "Indeed, We have created man in the best of stature." (Quran 95:4)</p>
+                <p class="mb-2 arabic"><span class="font-semibold">الآية القرآنية:</span> "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ" (القرآن 95:4)</p>
                 <p class="mb-2"><span class="font-semibold">Explanation:</span> Arches symbolize the simple and perfect design of Allah’s creation. Just as Allah created the human form in the best of stature, the arch represents the simplicity and balance found in the natural world.</p>
+                 <p class="mb-2 arabic"><span class="font-semibold">التفسير:</span> ترمز الأقواس إلى التصميم البسيط والمثالي لخلق الله. فكما خلق الله الإنسان في أحسن تقويم، يمثل القوس البساطة والتوازن الموجود في العالم الطبيعي.</p>
             </div>
 
             <div id="loops-result" class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md">
-                <h2 class="text-xl font-semibold mb-2">Loops (Green LED Light)</h2>
+                <h2 class="text-xl font-semibold mb-2">Loops</h2>
+                <h2 class="text-xl font-semibold mb-2 arabic">الحلقات</h2>
                 <p class="mb-2"><span class="font-semibold">Science Fact:</span> Loops are the second most common pattern and have ridges that flow in one direction, making a loop-like shape. They are unique to individuals.</p>
+                <p class="mb-2 arabic"><span class="font-semibold">الحقيقة العلمية:</span> الحلقات هي ثاني أكثر الأنماط شيوعًا ولها حواف تتدفق في اتجاه واحد، مما يشكل شكلًا يشبه الحلقة. وهي فريدة للأفراد.</p>
                 <p class="mb-2"><span class="font-semibold">Quran Verse:</span> "And We have certainly created man and We know what his soul whispers to him, and We are closer to him than [his] jugular vein." (Quran 50:16)</p>
+                <p class="mb-2 arabic"><span class="font-semibold">الآية القرآنية:</span> "وَلَقَدْ خَلَقْنَا الْإِنسَانَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِ نَفْسُهُ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ" (القرآن 50:16)</p>
                 <p class="mb-2"><span class="font-semibold">Explanation:</span> Loops reflect the continuous flow of life and the interconnectedness of all things. The Quran verse emphasizes how Allah is closer to us than we can ever imagine, just as the loops connect in continuous patterns.</p>
+                <p class="mb-2 arabic"><span class="font-semibold">التفسير:</span> تعكس الحلقات التدفق المستمر للحياة وترابط كل الأشياء. وتؤكد الآية القرآنية كيف أن الله أقرب إلينا مما نتخيل، تمامًا كما تتصل الحلقات في أنماط مستمرة.</p>
             </div>
 
             <div id="whorls-result" class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-md">
-                <h2 class="text-xl font-semibold mb-2">Whorls (Red LED Light)</h2>
+                <h2 class="text-xl font-semibold mb-2">Whorls</h2>
+                <h2 class="text-xl font-semibold mb-2 arabic">الدوامات</h2>
                 <p class="mb-2"><span class="font-semibold">Science Fact:</span> Whorls are characterized by circular or spiral patterns and are less common than loops and arches. They are often seen as more complex.</p>
+                <p class="mb-2 arabic"><span class="font-semibold">الحقيقة العلمية:</span> تتميز الدوامات بأنماط دائرية أو حلزونية وهي أقل شيوعًا من الحلقات والأقواس. وغالبًا ما تعتبر أكثر تعقيدًا.</p>
                 <p class="mb-2"><span class="font-semibold">Quran Verse:</span> "He is the Creator of the heavens and the earth; He created all things in the best way." (Quran 32:7)</p>
+                <p class="mb-2 arabic"><span class="font-semibold">الآية القرآنية:</span> "الَّذِي أَحْسَنَ كُلَّ شَيْءٍ خَلَقَهُ ۖ وَبَدَأَ خَلْقَ الْإِنسَانِ مِن طِينٍ" (القرآن 32:7)</p>
                 <p class="mb-2"><span class="font-semibold">Explanation:</span> Whorls represent complexity and intricacy. Just as Allah has created everything in the best possible way, the whorl design showcases the complexity and perfection inherent in His creation.</p>
+                <p class="mb-2 arabic"><span class="font-semibold">التفسير:</span> تمثل الدوامات التعقيد والتفاصيل الدقيقة. وكما خلق الله كل شيء بأفضل طريقة ممكنة، يبرز تصميم الدوامة التعقيد والكمال الكامن في خلقه.</p>
             </div>
 
             <div id="ridges-result" class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-md">
-                <h2 class="text-xl font-semibold mb-2">Ridges (Yellow LED Light)</h2>
-                 <p class="mb-2"><span class="font-semibold">Science Fact:</span> Ridges are the foundation of fingerprint patterns, forming the unique lines that define each pattern. They enhance grip and tactile sensitivity, demonstrating a functional elegance in their design.</p>
-                <p class="mb-2"><span class="font-semibold">Quran Verse:</span> "We have certainly created man in the best of stature" (Quran 95:4)</p>
-                <p class="mb-2"><span class="font-semibold">Explanation:</span>  Ridges, as the fundamental building blocks of fingerprints, illustrate the exquisite detail and purposefulness in Allah's creation. This verse highlights that humans are fashioned in the most excellent design, and ridges in our fingerprints are a testament to this perfection, aiding in our interaction with the world.</p>
+                  <h2 class="text-xl font-semibold mb-2">Ridges</h2>
+                  <h2 class="text-xl font-semibold mb-2 arabic">الحواف</h2>
+                  <p class="mb-2"><span class="font-semibold">Science Fact:</span> Ridges are the foundation of fingerprint patterns, forming the unique lines that define each pattern. They enhance grip and tactile sensitivity, demonstrating a functional elegance in their design.</p>
+                  <p class="mb-2 arabic"><span class="font-semibold">الحقيقة العلمية:</span> الحواف هي أساس أنماط بصمات الأصابع، وتشكل الخطوط الفريدة التي تحدد كل نمط. وهي تعزز الإمساك والحساسية اللمسية، مما يدل على أناقة وظيفية في تصميمها.</p>
+                  <p class="mb-2"><span class="font-semibold">Quran Verse:</span> "We have certainly created man in the best of stature" (Quran 95:4)</p>
+                  <p class="mb-2 arabic"><span class="font-semibold">الآية القرآنية:</span> "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ" (القرآن 95:4)</p>
+                  <p class="mb-2"><span class="font-semibold">Explanation:</span>  Ridges, as the fundamental building blocks of fingerprints, illustrate the exquisite detail and purposefulness in Allah's creation. This verse highlights that humans are fashioned in the most excellent design, and ridges in our fingerprints are a testament to this perfection, aiding in our interaction with the world.</p>
+                  <p class="mb-2 arabic"><span class="font-semibold">التفسير:</span>  تبرز الحواف، باعتبارها اللبنات الأساسية لبصمات الأصابع، التفاصيل الرائعة والهدفية في خلق الله. وتؤكد هذه الآية أن الإنسان مخلوق في أحسن تصميم، وتعد الحواف في بصمات أصابعنا دليلاً على هذا الكمال، حيث تساعدنا في تفاعلنا مع العالم.</p>
             </div>
         </div>
     </div>
@@ -150,9 +172,9 @@
                         fingerprintIcon.classList.remove('text-blue-500', 'text-green-500', 'text-red-500', 'text-yellow-500');
                         fingerprintIcon.classList.add('text-gray-500');
                         fingerprintIcon.classList.remove('scanning');
-                       // statusText.textContent = 'Place your finger on the scanner...';  //Removed this line
-                       // resultElement.classList.add('hidden'); // Removed this line
-                       // resultsContainer.classList.add('hidden');  //Removed this line
+                       // statusText.textContent = 'Place your finger on the scanner...';
+                       // resultElement.classList.add('hidden');
+                       // resultsContainer.classList.add('hidden');
                     }, 3000);
                 }, 3000);
             }
